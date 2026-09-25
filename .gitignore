@@ -1,0 +1,109 @@
+# ============================================================
+# .gitignore — Financial Performance Analysis (Dhruv)
+# ============================================================
+
+# ------------------------------------------------------------
+# Large Data Files (too big for GitHub free tier)
+# ------------------------------------------------------------
+*.xlsx
+*.xls
+*.xlsm
+
+# Exclude the large CSV — keep a sample if needed
+# Uncomment the next line to also ignore the CSV:
+# *.csv
+
+# Power BI binary file (large & binary — not diff-able)
+*.pbix
+*.pbit
+
+# PDF reports (generated output, not source)
+*.pdf
+
+# ------------------------------------------------------------
+# OS-generated files
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ------------------------------------------------------------
+# IDE / Editor files
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (DataGrip, PyCharm, etc.)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+# Python (if scripts are added later)
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+venv/
+.venv/
+env/
+.env
+*.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# PostgreSQL / Database
+# ------------------------------------------------------------
+*.dump
+*.sql.gz
+*.backup
+pg_log/
+
+# ------------------------------------------------------------
+# Logs & Temp files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ------------------------------------------------------------
+# Project-specific exclusions
+# ------------------------------------------------------------
+
+# Keep markdown docs, SQL, and CSV — track these in git
+# !*.md
+# !*.sql
+# !*.csv
+
+# Ignore any local notes or scratch files
+scratch/
+notes/
+local/

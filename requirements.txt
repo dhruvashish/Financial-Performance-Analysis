@@ -1,0 +1,62 @@
+# ============================================================
+# requirements.txt — Financial Performance Analysis (Dhruv)
+# Software & Tool Requirements
+# ============================================================
+# This project uses no Python packages as its primary stack.
+# Tools are listed below with recommended versions.
+#
+# If you add Python-based analysis later (e.g. pandas, matplotlib),
+# install dependencies with:  pip install -r requirements.txt
+# ============================================================
+
+# ------------------------------------------------------------
+# REQUIRED SOFTWARE (install manually)
+# ------------------------------------------------------------
+#
+# 1. PostgreSQL 15+
+#    Download: https://www.postgresql.org/download/
+#    Used for: SQL analysis (all queries in sql_analysis.sql)
+#
+# 2. Power BI Desktop (free)
+#    Download: https://powerbi.microsoft.com/desktop/
+#    Used for: Interactive dashboard
+#
+# 3. Microsoft Excel 2016+ (or Microsoft 365)
+#    Used for: Data cleaning, Pivot Table analysis
+#
+# 4. Git 2.40+
+#    Download: https://git-scm.com/
+#    Used for: Version control and GitHub publishing
+#
+# ------------------------------------------------------------
+# OPTIONAL — Python packages (for future scripting/EDA)
+# ------------------------------------------------------------
+
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+psycopg2-binary>=2.9.6
+sqlalchemy>=2.0.0
+openpyxl>=3.1.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# ------------------------------------------------------------
+# HOW TO USE (if adding Python analysis)
+# ------------------------------------------------------------
+# Create a virtual environment:
+#   python -m venv venv
+#   venv\Scripts\activate         (Windows)
+#   source venv/bin/activate      (macOS/Linux)
+#
+# Install packages:
+#   pip install -r requirements.txt
+#
+# Connect Python to PostgreSQL:
+#   import psycopg2
+#   conn = psycopg2.connect(
+#       host="localhost", database="superstore",
+#       user="postgres", password="your_password"
+#   )
+# ------------------------------------------------------------
